@@ -1,0 +1,174 @@
+.dark-mode .about-section {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.about-section {
+    display: flex;
+    gap: 40px; /* Increased gap between content */
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0 12%; /* Increased padding for better spacing */
+    min-height: 800px; /* Increased minimum height */
+    background-image: url("../images/bg-dark.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    .content {
+        text-align: left;
+        z-index: 2;
+
+        .social_icons {
+            display: flex;
+            flex-direction: row;
+            gap: 15px; /* Increased gap between icons */
+            color: white;
+
+            svg {
+                font-size: 2em; /* Increased icon size */
+            }
+        }
+
+        .mobile_social_icons {
+            display: none;
+        }
+
+        p {
+            font-size: 1.7em; /* Increased paragraph font size */
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        h1 {
+            font-size: 4.5em; /* Increased heading font size */
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+    }
+
+    .image-wrapper {
+        z-index: 2;
+
+        img {
+            width: 180px; /* Increased image size */
+            border-radius: 50%;
+        }
+    }
+}
+
+.about p {
+    text-align: center;
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+
+@media screen and (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        padding-top: 120px; /* Increased padding-top */
+        padding-bottom: 60px; /* Increased padding-bottom */
+        padding-left: 8%; /* Increased side padding */
+        padding-right: 8%;
+    }
+
+    .about-section h1 {
+        font-size: 3.5em; /* Increased font size for smaller screens */
+        text-align: center;
+    }
+
+    .about-section p {
+        text-align: center;
+        font-size: 1.4em; /* Increased paragraph font size */
+    }
+
+    .content {
+        width: 100%;
+        padding: 0 6%;
+    }
+
+    .image-wrapper {
+        margin: 0 auto 30px; /* Adjusted margin for spacing */
+        text-align: center;
+
+        img {
+            width: 140px; /* Increased image size */
+        }
+    }
+
+    .social_icons {
+        display: none;
+    }
+
+    .mobile_social_icons {
+        display: flex !important;
+        justify-content: center;
+        gap: 20px; /* Increased gap between icons */
+        padding-top: 15px; /* Increased padding-top */
+
+        svg {
+            font-size: 2.2em; /* Increased icon size */
+        }
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .nav-left {
+        padding-top: 20px;
+        float: left;
+    }
+
+    .nav-left img {
+        height: 40px; /* Increased logo height */
+    }
+
+    .nav-right {
+        float: right;
+    }
+
+    .nav-right li {
+        padding: 12px 18px; /* Increased padding for nav items */
+        list-style: none;
+        font-size: 14px; /* Increased font size */
+        color: white;
+    }
+
+    .nav-right ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .about {
+        padding-left: 6%; /* Increased padding for smaller screens */
+        padding-right: 6%;
+        font-size: 15px; /* Slightly increased base font size */
+    }
+
+    .about-section h1 {
+        font-size: 3em; /* Increased heading size */
+        text-align: center;
+    }
+
+    .about-section p {
+        text-align: center;
+        font-size: 1.2em; /* Increased paragraph font size */
+    }
+
+    .content {
+        padding: 0 6%; /* Adjusted padding */
+    }
+
+    .image-wrapper img {
+        width: 120px; /* Increased image size */
+    }
+
+    .mobile_social_icons svg {
+        font-size: 1.7em; /* Increased icon size */
+    }
+}
